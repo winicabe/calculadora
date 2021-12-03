@@ -5,13 +5,20 @@ const result = document.getElementById("result");
 
 document.getElementById("somar").onclick = function() {
     let soma = num1.valueAsNumber+num2.valueAsNumber;
-    console.log(soma);
-
     result.innerHTML = soma;
 }
 
-/*
-function test(result){
-    result.innerHTML = soma;
-    console.log(result);
-}*/
+document.getElementById("subtrair").onclick = function() {
+    let subtrair = num1.valueAsNumber-num2.value
+    result.innerHTML = subtrair;
+}
+
+document.getElementById("multiplicar").onclick = function() {
+    let subtrair = num1.valueAsNumber*num2.value
+    result.innerHTML = subtrair;
+}
+
+document.getElementById("dividir").onclick = function() {
+    let subtrair = num1.valueAsNumber/num2.value
+    result.innerHTML = subtrair;
+}
