@@ -1,11 +1,17 @@
-const num1 = document.getElementById("num1")
-const num2 = document.getElementById("num2")
+let num1 = document.getElementById("num1");
+let num2 = document.getElementById("num2");
 
-let result = document.getElementById("result")
+const result = document.getElementById("result");
 
-document.getElementById("somar").onclick = test
+document.getElementById("somar").onclick = function() {
+    let soma = num1.valueAsNumber+num2.valueAsNumber;
+    console.log(soma);
 
-function test(){
-    result.innerHTML = num1+num2;
-    console.log("result")
+    result.innerHTML = soma;
 }
+
+/*
+function test(result){
+    result.innerHTML = soma;
+    console.log(result);
+}*/
